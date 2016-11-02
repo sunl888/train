@@ -1,0 +1,114 @@
+*{padding: 0;margin: 0;box-sizing: border-box;font-family: "Microsoft YaHei";}
+body{
+	padding-top: 58px;
+}
+a,a:link,a:hover{text-decoration: none;}
+/*导航栏*/
+header.nav{
+	height: 58px;
+	border-bottom: 1px solid #EBEBEB;
+	width: 100%;
+	line-height: 58px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	z-index: 11;
+}
+header.nav>a.logo{
+	display: block;
+	font-size: 30px;
+	width: 58px;
+	text-align: center;
+	color: #8B8B8B;
+	cursor:pointer;
+	transition: color .3s;
+	float: left;
+}
+header.nav>a:hover{
+	color: #333;
+}
+header.nav>a.write{
+	float: right;
+	font-size: 18px;
+	margin-right: 40px;
+	color:gray;
+	transition: color .3s;
+	font-weight: 5s00;
+}
+header.nav>a.write:hover{
+	color: #333;
+}
+/*底部导航*/
+footer.foot{
+	height: 50px;
+	width: 100%;
+	margin-top: 50px;
+}
+footer.foot>p{
+	line-height: 50px;
+	text-align: center;
+	color: #999;
+	font-size: 13px;
+}
+/* 写文章页面 */
+.write_body{
+	width: 660px;
+	margin: 40px auto;
+}
+.write_body input[type = text]{
+	display: block;
+	min-height: 44px;
+	width: 100%;
+  font-size: 32px;
+  color: #333;
+  font-weight: 600;
+	outline: 0;
+	border: none;
+	border-bottom: 1px solid #DDD;
+	padding: 10px 0 10px 10px;
+	margin-bottom: 50px;
+}
+.write_body textarea{
+	min-height: 500px;
+	width: 100%;
+	border: none;
+	outline: 0;
+	font-size: 16px;
+  padding: 10px;
+  line-height: 1.6;
+}
+.write_body input[type = submit]{
+	width: 200px;
+	height: 45px;
+	margin: 30px auto;
+	display: block;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 16px;
+	color: #fff;
+	background-color: #5cb85c;
+}
+.write_body input[type = submit]:hover{
+	background-color: #4cae4c;
+}
+/*媒体查询*/
+@media (max-width: 767px){
+	/* 详情页面 */
+	.article_main,.article_main,.write_body{
+		width: 100%;
+		padding: 20px;
+	}
+	/* 首页页面 */
+	.bg_img{
+		height: 300px;
+	}
+	.bg_img>.bg_body{
+		padding-top: 50px;
+	}
+	.bg_img_test>h2{
+		margin-bottom: 12px;
+	}
+	/* 写文章页面 */
+}

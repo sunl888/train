@@ -1,0 +1,201 @@
+/*首页大图*/
+.bg_img{
+	position: relative;
+	height: 560px;
+	width: 100%;
+	background:url('../img/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	transition: all .3s;
+}
+.bg_img>.Mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .4;
+	z-index: 9;
+}
+.bg_img>.bg_body{
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 10;
+	height: 100%;
+	padding-top: 100px;
+
+}
+.bg_img_test{
+	text-align: center;
+}
+.bg_img_test>h2{
+	font-size: 30px;
+	color: #fff;
+	margin-bottom: 100px;
+}
+.bg_img_test>p{
+	font-size: 18px;
+	font-weight: 300;
+	color:#fff;
+	margin-bottom: 40px;
+}
+.bg_img_test>a{
+  line-height: 36px;
+	width: 102px;
+	height: 38px;
+	color: #fff;
+	border: 2px solid #fff;
+	padding:8px;
+  position: relative;
+  opacity: .7;
+  transition: opacity .4s;
+  cursor: pointer;
+}
+/*文章列表*/
+.article_main{
+	width: 660px;
+	margin: 40px auto;
+	position: relative;
+}
+.article_main>h2.title{
+	font-size: 16px;
+	color: #000;
+	text-align: center;
+}
+.article_main>ul.items{
+	list-style:none;
+}
+.article_main>ul.items li:not(first-child){
+	margin-top: 50px;
+}
+.article_main>ul.items a>h2{
+	font-size: 20px;
+	font-family: "微软雅黑";
+	color:#333;
+	margin-bottom: 20px;
+}
+.article_main>ul.items a>p{
+	font-size: 16px;
+	line-height: 1.7;
+	color: #666;
+	transition: color .4s;
+	margin-bottom: 10px;
+	/*控制多行文本溢出*/
+	display:-webkit-box!important;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	word-break:break-all;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:3;/*控制溢出行数*/
+}
+.article_main>ul.items li>a:hover >p{
+	color: #000;
+}
+.article_main>ul.items li>footer{
+	position: relative;
+}
+.article_main>ul.items li>footer>div{
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+.article_main>ul.items li>footer>div a{
+	margin-right: 10px;
+	color: gray;
+	font-size: 14px;
+	transition: color .2s;
+}
+.article_main>ul.items li>footer>div a:first-child:hover{
+	color: #0E88EB;
+}
+.article_main>ul.items li>footer>div a:last-child:hover{
+	color: #d43f3a;
+}
+/*底部导航*/
+footer.foot{
+	height: 50px;
+	width: 100%;
+	margin-top: 50px;
+}
+footer.foot>p{
+	line-height: 50px;
+	text-align: center;
+	color: #999;
+	font-size: 13px;
+}
+/**
+ * 按钮特效
+ * 有能力者可以看看
+ */
+.bg_img_test>a:hover{
+		opacity: 1;
+	}
+.line{
+	position: absolute;
+	background-color: #fff;
+	display: block;
+	transition: all .4s;
+}
+.line_top,.line_bottom{
+	height: 2px;
+	width: 0;
+}
+.line_left,.line_right{
+	height: 0;
+	width: 2px;
+}
+.line_top{
+	top: -2px;
+	left: -150px;
+}
+.line_bottom{
+	bottom: -2px;
+	right: -150px;
+}
+.line_left{
+	bottom: -40px;
+	left: -2px;
+}
+.line_right{
+	top: -40px;
+	right: -2px;
+}
+.bg_img_test>a:hover .line_top{
+	width: 98px;
+	left: 0;
+}
+.bg_img_test>a:hover .line_bottom{
+	width: 98px;
+	right: 0;
+}
+.bg_img_test>a:hover .line_left{
+	height: 38px;
+	left: -2px;
+	bottom: 0;
+}
+.bg_img_test>a:hover .line_right{
+	height: 38px;
+	right: -2px;
+	top: 0;
+}
+/*媒体查询*/
+@media (max-width: 767px){
+	.bg_img{
+		height: 300px;
+	}
+	.article_main{
+		width: 100%;
+	}
+	.bg_img>.bg_body{
+		padding-top: 50px;
+	}
+	.bg_img_test>h2{
+		margin-bottom: 12px;
+	}
+	.article_main{
+		width: 100%;
+		padding: 0 20px;
+	}
+}
