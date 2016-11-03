@@ -3,8 +3,10 @@
  <head>
  	<title>T博</title>
  	<meta charset="UTF-8">
- 	<link rel="stylesheet" type="text/css" href="public/css/index.css">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="public/css/index.css">
  	<link rel="stylesheet" type="text/css" href="public/css/comm.css">
+	
  </head>
  <body>
  	<div class="article_body">
@@ -48,7 +50,7 @@
      				<li>
      					<a href="details.php?cid=<?php echo $val['id']?>">
      						<h2> <?php echo $val['title']?> </h2>
-     						<p> <?php echo $val['article']?> </p>
+     						<p> <?php echo $val['article'];?> </p>
      					</a>
      					<footer>
      						<div>

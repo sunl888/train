@@ -11,6 +11,7 @@
 <head>
 	<title>T博</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="public/css/details.css">
 	<link rel="stylesheet" type="text/css" href="public/css/comm.css">
 </head>
@@ -18,7 +19,7 @@
 	<div class="article_body">
 		<header class="nav">
 			<a href="index.php" class="logo">T</a>
-			<a href="javascript:;" class="write">写文章</a>
+			<a href="write.php" class="write">写文章</a>
 		</header>
 		<div class="write_body">
 			<form action="doWrite.php" method="POST">

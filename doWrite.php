@@ -9,9 +9,10 @@
   /**
   * addslashes 单双引号、反斜线及NULL加上反斜线转义,仅仅是为了让原来的字符正确地进入数据库。
   * htmlspecialchars将与、单双引号、大于和小于号化成HTML格式 如 <转成&lt; >转成&gt;
+  * htmlspecialchars_decode 将&lt等转成html格式
   * 防止xss攻击
   */
-  $article = addslashes(htmlspecialchars($_POST['article']));
+  $article =strip_tags( $_POST['article']);
   $cid = $_POST['cid'];
   //获取文章的字数
   $strlength = strLength($article);

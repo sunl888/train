@@ -10,6 +10,6 @@ return $connections=[
     'port' => '3306',
     'database' => 'demo',
     'username' => 'root',
-    'password' => '',
+    'password' => 'KeYpZrZx',
     'charset' => 'utf8',
 ];
